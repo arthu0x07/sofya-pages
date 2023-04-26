@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
-import { theme } from "./theme";
+import { theme } from "./DefaultTheme";
 
 export const GlobalStyles = createGlobalStyle`
     :root {
-        font-size: 62.5%; // 62.5% = 10px
+        font-size: 62.5%; //1rem = 10px && 1.6rem = 16px...
     }
 
     html, body, div, span, applet, object, iframe,
