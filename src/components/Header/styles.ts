@@ -8,7 +8,7 @@ export const Container = styled.header`
 
   border-bottom: 1px solid #365fd7;
 
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(4.0px);
   -webkit-backdrop-filter: blur(40px);
 `;
 
@@ -22,6 +22,8 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
+export const LogoImage = styled.img``;
+
 export const ContainerSettingsLanguage = styled.div`
   display: flex;
   align-items: center;
@@ -32,7 +34,12 @@ export const ContainerSettingsLanguage = styled.div`
 
 export const ContainerSelectedLanguage = styled.div``;
 
-export const LogoImage = styled.img``;
+export const LanguageImage = styled.img`
+  width: 3.9rem;
+  height: 2.3rem;
+  margin-right: 1.7rem;
+  cursor: pointer;
+`;
 
 export const ContainerModal = styled.div.attrs(
   (props: { modalHeight: number, isModalOpen: boolean}) => ({
@@ -56,13 +63,9 @@ export const ModalOption = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 19px 35px;
-`;
+  padding: 1.9rem 3.5rem;
+  cursor: pointer;
 
-export const LanguageImage = styled.img`
-  width: 3.9rem;
-  height: 2.3rem;
-  margin-right: 1.7rem;
 `;
 
 export const OptionName = styled.div`

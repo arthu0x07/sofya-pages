@@ -55,6 +55,7 @@ export const Option = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.accent};
   box-shadow: inset 0px 0px 50px ${({ theme }) => theme.colors.background};
+  cursor: pointer;
 `;
 
 export const SocialMedia = styled.section`
