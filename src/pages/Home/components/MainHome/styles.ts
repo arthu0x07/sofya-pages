@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const MainContainer = styled.main`
   width: 100%;
@@ -57,6 +58,17 @@ export const Option = styled.div`
   box-shadow: inset 0px 0px 50px ${({ theme }) => theme.colors.background};
   cursor: pointer;
 `;
+
+export const LinkAnchor = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.text};
+`;
+
+export const LinkRouter = styled(Link)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.text};
+`;
+
 
 export const SocialMedia = styled.section`
   margin-top: 7rem;
