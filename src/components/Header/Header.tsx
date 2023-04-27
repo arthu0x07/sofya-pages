@@ -50,6 +50,7 @@ export function Header() {
   );
 }
 
+// Modal Language Change Component
 interface LanguageModalProps {
   handleSelectLanguage: (language: LanguagesType) => void;
   isModalOpen: boolean

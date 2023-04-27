@@ -69,13 +69,14 @@ export const LinkRouter = styled(Link)`
   color: ${({ theme }) => theme.colors.text};
 `;
 
-
 export const SocialMedia = styled.section`
   margin-top: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 7rem;
+  position: relative;
+  z-index: 1;
 `;
 
 export const SocialMediaOption = styled.div`

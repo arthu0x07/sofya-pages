@@ -1,9 +1,7 @@
 import * as S from "./styles";
-import { Link } from "react-router-dom";
 
 import InstagramIcon from "/src/assets/images/instagram-icon.svg";
 import LinkedlnIcon from "/src/assets/images/linkedln-icon.svg";
-
 import PortuguesPDF from "/src/assets/pdfs/Sofya-Portugues.pdf";
 
 export function MainHomepage() {
@@ -40,7 +38,6 @@ export function MainHomepage() {
 
           <S.SocialMediaOption>
             <S.SocialMediaImage alt="" src={LinkedlnIcon} />
-
             <S.SocialMediaTitle>Linkedin</S.SocialMediaTitle>
           </S.SocialMediaOption>
         </S.SocialMedia>

@@ -10,6 +10,9 @@ export const Container = styled.header`
 
   backdrop-filter: blur(4.0px);
   -webkit-backdrop-filter: blur(40px);
+
+  position: relative;
+  z-index: 1;
 `;
 
 export const Wrapper = styled.div`
