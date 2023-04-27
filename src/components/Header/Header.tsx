@@ -56,16 +56,15 @@ interface LanguageModalProps {
 }
 
 function LanguageModal({ handleSelectLanguage, isModalOpen }: LanguageModalProps) {
-  const [modalHeight, setModalHeight] = useState<number>();
+  const [modalHeight, setModalHeight] = useState<number>(0);
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (modalRef.current) {
+    if (modalRef.current && modalHeight <= 0) {
       const heightInPixels = modalRef.current.offsetHeight;
       setModalHeight(heightInPixels);
-      console.log("Altura em pixels:", heightInPixels);
     }
-  }, []);
+  });
 
   return (
     <S.ContainerModal ref={modalRef} modalHeight={modalHeight} isModalOpen={isModalOpen}>

@@ -35,12 +35,12 @@ export const ContainerSelectedLanguage = styled.div``;
 export const LogoImage = styled.img``;
 
 export const ContainerModal = styled.div.attrs(
-  (props: { modalHeight: number; isModalOpen: boolean }) => ({
+  (props: { modalHeight: number, isModalOpen: boolean}) => ({
     modalHeight: props.modalHeight,
-    isModalOpen: props.isModalOpen,
+    isModalOpen: props.isModalOpen
   })
 )`
-  display: ${({ isModalOpen }) => (isModalOpen ? "flex" : "none")};
+  display: ${({isModalOpen}) => isModalOpen ? "flex" : "none"};
   flex-direction: column;
   justify-content: flex-start;
 
@@ -69,6 +69,7 @@ export const OptionName = styled.div`
   width: 100%;
   font-family: ${({ theme }) => theme.typography.fontFamily};
   font-size: ${({ theme }) => theme.typography.sizes.large};
+  font-weight:  ${({ theme }) => theme.typography.fontWeight.light};
 `;
 
 export const Overlay = styled.div.attrs((props: { isModalOpen: boolean }) => ({

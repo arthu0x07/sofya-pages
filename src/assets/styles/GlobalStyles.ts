@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
         line-height: 1;
         background-color: ${() => theme.colors.background};
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     ol, ul {
