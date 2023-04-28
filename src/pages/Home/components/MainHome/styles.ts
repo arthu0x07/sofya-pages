@@ -16,6 +16,11 @@ export const MainWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -25,6 +30,10 @@ export const Title = styled.h1`
   font-size: ${({ theme }) => theme.typography.sizes.xx3large};
   font-weight: ${({ theme }) => theme.typography.fontWeight.semiBold};
   margin-top: 6rem;
+
+  @media (max-width: 1024px) {
+    font-size: ${({ theme }) => theme.typography.sizes.xx2large};
+  }
 `;
 
 export const Subtitle = styled.h2`
@@ -34,6 +43,10 @@ export const Subtitle = styled.h2`
   font-size: ${({ theme }) => theme.typography.sizes.xxlarge};
   font-weight: ${({ theme }) => theme.typography.fontWeight.normal};
   margin-top: 1.5rem;
+
+  @media (max-width: 1024px) {
+    font-size: ${({ theme }) => theme.typography.sizes.large};
+  }
 `;
 
 export const ContainerCards = styled.section`
