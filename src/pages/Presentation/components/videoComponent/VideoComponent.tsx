@@ -19,9 +19,9 @@ export function VideoComponent({
   description,
 }: VideoComponent) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState<boolean>(false); // Estado para controlar as funções de pause e play do video
-  const [showControls, setShowControls] = useState<boolean>(false); // estado usado para mostrar os controles.
-  const controlsTimerRef = useRef<number | null>(null); // Referencia centralizada para resetar o timer dos controles.
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [showControls, setShowControls] = useState<boolean>(false);
+  const controlsTimerRef = useRef<number | null>(null);
 
   const startControlsTime = () => {
     setShowControls(true);

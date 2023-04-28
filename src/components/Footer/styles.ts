@@ -22,6 +22,7 @@ export const FooterTitle = styled.h3`
 
 export const ImagesBackground = styled.div`
   position: absolute;
+  z-index: -1;
 `;
 
 export const RisesImage = styled.img`
