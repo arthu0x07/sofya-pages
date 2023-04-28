@@ -112,6 +112,11 @@ export const SocialMediaOption = styled.div`
 export const SocialMediaImage = styled.img`
   width: 4rem;
   height: 4rem;
+
+  @media (max-width: 768px) {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
 `;
 
 export const SocialMediaTitle = styled.h3`
