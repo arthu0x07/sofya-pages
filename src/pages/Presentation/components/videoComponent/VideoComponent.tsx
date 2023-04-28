@@ -1,11 +1,10 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import * as S from "./styles";
 
 import PausedIcon from "/src/assets/images/paused-icon.svg";
 import PlayingIcon from "/src/assets/images/playing-icon.svg";
 import SofyaLogo from "/src/assets/images/sofya-poster.svg";
-
 
 interface VideoComponent {
   title: string;
@@ -25,15 +24,26 @@ export function VideoComponent({
 
   const startControlsTime = () => {
     setShowControls(true);
+    if (isPlaying) {
+      if (controlsTimerRef.current) {
+        clearTimeout(controlsTimerRef.current);
+      }
 
-    if (controlsTimerRef.current) {
-      clearTimeout(controlsTimerRef.current);
+      controlsTimerRef.current = setTimeout(() => {
+        setShowControls(false);
+      }, 1500);
     }
-
-    controlsTimerRef.current = setTimeout(() => {
-      setShowControls(false);
-    }, 1500);
   };
+
+  useEffect(() => {
+    setShowControls(true);
+
+    if (isPlaying == false) {
+      if (controlsTimerRef.current) {
+        clearTimeout(controlsTimerRef.current);
+      }
+    }
+  }, [isPlaying]);
 
   const handlePlayAndPause = () => {
     if (videoRef.current) {
