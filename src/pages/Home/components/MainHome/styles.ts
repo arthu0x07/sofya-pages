@@ -21,6 +21,11 @@ export const MainWrapper = styled.div`
     margin-right: 2rem;
     margin-left: 2rem;
   }
+
+  @media (max-width: 390px) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -60,6 +65,10 @@ export const ContainerCards = styled.section`
   font-family: ${({ theme }) => theme.typography.fontFamily};
   font-size: ${({ theme }) => theme.typography.sizes.xlarge};
   font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
+
+  @media (max-width: 390px) {
+    font-size: ${({ theme }) => theme.typography.sizes.medium};
+  }
 `;
 
 export const Option = styled.div`
