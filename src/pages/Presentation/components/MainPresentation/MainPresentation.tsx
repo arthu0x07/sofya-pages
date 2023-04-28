@@ -24,5 +24,3 @@ export function MainPresentation() {
     </S.MainContainer>
   );
 }
-
-// VideoComponent Precisa: Titulo do Video, Link do Video, Descrição do Video

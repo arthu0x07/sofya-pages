@@ -26,8 +26,6 @@ export function LanguageProvider({ children }: LanguageContextProps) {
   };
 
   const setContextLanguage = (language: string) => {
-    console.log("context", language);
-
     language == LanguagesType.portuguese
       ? setPortugueseLanguage()
       : setEnglishLanguage();

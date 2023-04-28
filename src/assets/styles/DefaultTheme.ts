@@ -29,4 +29,3 @@ export const theme = {
   },
 };
 
-// colocar as fontes e configurar a importação das mesmas...
