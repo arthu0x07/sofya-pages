@@ -47,15 +47,25 @@ export function MainHomepage() {
         </S.ContainerCards>
 
         <S.SocialMedia>
-          <S.SocialMediaOption>
-            <S.SocialMediaImage alt="" src={InstagramIcon} />
-            <S.SocialMediaTitle>Instagram</S.SocialMediaTitle>
-          </S.SocialMediaOption>
+          <S.LinkAnchor
+            href="https://l.workplace.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fsofya.health%2F&h=AT3uOXqVjmJ-e2z3xu6_pawlENxK-vHmVnzpVAU4U08BVQisUmNYfDawREagXpv9QQ0NmTHGbo5_OdQxD2EBnzbUfz0y_jHwlgonMFF_CcvBA5wHJST2Fd_wb6znHlY5y78ld1N2ZedWIZ06mTUeeUw-rkc4vM4_xw"
+            target="_self"
+          >
+            <S.SocialMediaOption>
+              <S.SocialMediaImage alt="" src={InstagramIcon} />
+              <S.SocialMediaTitle>Instagram</S.SocialMediaTitle>
+            </S.SocialMediaOption>
+          </S.LinkAnchor>
 
-          <S.SocialMediaOption>
-            <S.SocialMediaImage alt="" src={LinkedlnIcon} />
-            <S.SocialMediaTitle>Linkedin</S.SocialMediaTitle>
-          </S.SocialMediaOption>
+          <S.LinkAnchor
+            href="https://l.workplace.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsofya-health%2F&h=AT3uOXqVjmJ-e2z3xu6_pawlENxK-vHmVnzpVAU4U08BVQisUmNYfDawREagXpv9QQ0NmTHGbo5_OdQxD2EBnzbUfz0y_jHwlgonMFF_CcvBA5wHJST2Fd_wb6znHlY5y78ld1N2ZedWIZ06mTUeeUw-rkc4vM4_xw"
+            target="_self"
+          >
+            <S.SocialMediaOption>
+              <S.SocialMediaImage alt="" src={LinkedlnIcon} />
+              <S.SocialMediaTitle>Linkedin</S.SocialMediaTitle>
+            </S.SocialMediaOption>
+          </S.LinkAnchor>
         </S.SocialMedia>
       </S.MainWrapper>
     </S.MainContainer>

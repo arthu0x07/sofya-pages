@@ -13,6 +13,7 @@ export const FooterTitle = styled.h3`
   width: 100%;
   text-align: center;
   position: absolute;
+  z-index: 2;
 
   color: ${({ theme }) => theme.colors.text};
   font-family: ${({ theme }) => theme.typography.fontFamily};

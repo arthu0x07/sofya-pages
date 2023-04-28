@@ -4,7 +4,7 @@ import * as S from "./styles";
 
 import PausedIcon from "/src/assets/images/paused-icon.svg";
 import PlayingIcon from "/src/assets/images/playing-icon.svg";
-import SofyaLogo from "/src/assets/images/sofya-logo.svg";
+import SofyaLogo from "/src/assets/images/sofya-poster.svg";
 
 
 interface VideoComponent {

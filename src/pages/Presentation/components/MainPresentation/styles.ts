@@ -24,10 +24,19 @@ export const ContainerCards = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 14.7rem;
 
+  margin-top: 14.7rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   gap: 5.8rem;
 
   flex-grow: 1;
   flex-shrink: 1;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: stretch;
+    margin: 0 0;
+    margin-top: 4.8rem;
+  }
 `;

@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const ContainerCardItem = styled.div`
-  min-width: 320px;
+  min-width: 290px;
   max-width: 390px;
 
   display: flex;
@@ -18,6 +18,10 @@ export const TitleVideo = styled.h2`
   font-family: ${({ theme }) => theme.typography.fontFamily};
   font-size: ${({ theme }) => theme.typography.sizes.xlarge};
   font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
+
+  @media (max-width: 1024px) {
+    margin-left: 2rem;
+  }
 `;
 
 export const ContainerVideo = styled.video`
@@ -31,6 +35,10 @@ export const ContainerIframe = styled.source``;
 export const ContainerVideoDescription = styled.div`
   max-width: 350px;
   margin-top: 1.2rem;
+
+  @media (max-width: 1024px) {
+    margin: 0 2rem;
+  }
 `;
 
 export const ContainerControls = styled.div`
