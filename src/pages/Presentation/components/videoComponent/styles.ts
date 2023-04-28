@@ -58,6 +58,6 @@ export const VideoDescription = styled.p`
   color: ${({ theme }) => theme.colors.text2};
   font-family: ${({ theme }) => theme.typography.fontFamily};
   font-size: ${({ theme }) => theme.typography.sizes.medium};
-  font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.medium};
   line-height: 2.2rem;
 `;

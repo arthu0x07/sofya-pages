@@ -1,5 +1,6 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "/src/contexts/LanguageProvider";
 
 import * as S from "./styles";
 
@@ -13,9 +14,12 @@ enum LanguagesType {
 }
 
 export function Header() {
+  const LanguageContextValue: any = useContext(LanguageContext);
+
   const [selectedLanguage, setSeletedLanguage] = useState<LanguagesType>(
     LanguagesType.portuguese
   );
+
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   function handleToggleModal() {
@@ -28,6 +32,7 @@ export function Header() {
 
   function handleSelectLanguage(language: LanguagesType) {
     setSeletedLanguage(language);
+    LanguageContextValue.setContextLanguage(language);
   }
 
   return (

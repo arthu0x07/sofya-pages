@@ -4,6 +4,8 @@ import * as S from "./styles";
 
 import PausedIcon from "/src/assets/images/paused-icon.svg";
 import PlayingIcon from "/src/assets/images/playing-icon.svg";
+import SofyaLogo from "/src/assets/images/sofya-logo.svg";
+
 
 interface VideoComponent {
   title: string;
@@ -55,6 +57,7 @@ export function VideoComponent({
         ref={videoRef}
         onMouseMove={startControlsTime}
         onEnded={() => onVideoEnded()}
+        poster={SofyaLogo}
       >
         <S.ContainerIframe src={linkVideo} type="video/mp4"></S.ContainerIframe>
       </S.ContainerVideo>

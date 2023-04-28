@@ -7,7 +7,7 @@ export const MainContainer = styled.main`
   align-items: center;
 
   position: relative;
-  z-index: 1;
+  z-index: 3;
 `;
 
 export const MainWrapper = styled.div`
@@ -24,7 +24,7 @@ export const ContainerCards = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 12.7rem;
+  margin-top: 14.7rem;
 
   gap: 5.8rem;
 

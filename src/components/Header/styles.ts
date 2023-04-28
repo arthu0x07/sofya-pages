@@ -12,7 +12,7 @@ export const Container = styled.header`
   -webkit-backdrop-filter: blur(40px);
 
   position: relative;
-  z-index: 1;
+  z-index: 4;
 `;
 
 export const Wrapper = styled.div`

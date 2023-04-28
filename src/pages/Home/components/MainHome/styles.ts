@@ -76,7 +76,7 @@ export const SocialMedia = styled.section`
   align-items: center;
   gap: 7rem;
   position: relative;
-  z-index: 1;
+  z-index: 4;
 `;
 
 export const SocialMediaOption = styled.div`

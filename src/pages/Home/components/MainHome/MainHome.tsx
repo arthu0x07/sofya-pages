@@ -1,33 +1,48 @@
+import { useContext } from "react";
+import { LanguageContext } from "/src/contexts/LanguageProvider";
+
 import * as S from "./styles";
 
 import InstagramIcon from "/src/assets/images/instagram-icon.svg";
 import LinkedlnIcon from "/src/assets/images/linkedln-icon.svg";
-import PortuguesPDF from "/src/assets/pdfs/Sofya-Portugues.pdf";
 
 export function MainHomepage() {
+  const LanguageContextValue: any = useContext(LanguageContext);
+  const { screen_home } = LanguageContextValue.selectedLanguage;
+
   return (
     <S.MainContainer>
       <S.MainWrapper>
-        <S.Title>Conheça nosso produto</S.Title>
+        <S.Title>{screen_home.title}</S.Title>
 
-        <S.Subtitle>Selecione o conteúdo que deseja acessar</S.Subtitle>
+        <S.Subtitle>{screen_home.subtitle}</S.Subtitle>
 
         <S.ContainerCards>
-          <S.LinkAnchor href="https://www.sofya.ai/" target="_self">
-            <S.Option>Website</S.Option>
-          </S.LinkAnchor>
+          {screen_home.linkOptions.map((option: any) => {
+            option.isRoute && (
+              <S.LinkRouter to={option.link}>
+                <S.Option>{option.title}</S.Option>
+              </S.LinkRouter>
+            );
 
-          <S.LinkAnchor href={PortuguesPDF} download={true}>
-            <S.Option>Apresentação Institucional</S.Option>
-          </S.LinkAnchor>
+            option.isDownload && (
+              <S.LinkAnchor href={option.link} download={true}>
+                <S.Option>{option.title}</S.Option>
+              </S.LinkAnchor>
+            );
 
-          <S.LinkRouter to={"/presentation"}>
-            <S.Option>Demonstrações</S.Option>
-          </S.LinkRouter>
+            option.isTel && (
+              <S.LinkAnchor href={option.link}>
+                <S.Option>{option.title}</S.Option>
+              </S.LinkAnchor>
+            );
 
-          <S.LinkAnchor href={"#whatsappp"}>
-            <S.Option>Contato</S.Option>
-          </S.LinkAnchor>
+            return (
+              <S.LinkAnchor href={option.link} target="_self">
+                <S.Option>{option.title}</S.Option>
+              </S.LinkAnchor>
+            );
+          })}
         </S.ContainerCards>
 
         <S.SocialMedia>
