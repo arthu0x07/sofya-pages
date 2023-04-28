@@ -19,29 +19,30 @@ export function MainHomepage() {
 
         <S.ContainerCards>
           {screen_home.linkOptions.map((option: any) => {
-            option.isRoute && (
-              <S.LinkRouter to={option.link}>
-                <S.Option>{option.title}</S.Option>
-              </S.LinkRouter>
-            );
-
-            option.isDownload && (
-              <S.LinkAnchor href={option.link} download={true}>
-                <S.Option>{option.title}</S.Option>
-              </S.LinkAnchor>
-            );
-
-            option.isTel && (
-              <S.LinkAnchor href={option.link}>
-                <S.Option>{option.title}</S.Option>
-              </S.LinkAnchor>
-            );
-
-            return (
-              <S.LinkAnchor href={option.link} target="_self">
-                <S.Option>{option.title}</S.Option>
-              </S.LinkAnchor>
-            );
+            if (option.isRoute) {
+              return (
+                <S.LinkRouter to={option.link}>
+                  <S.Option>{option.title}</S.Option>
+                </S.LinkRouter>
+              );
+            } else if (option.isDownload) {
+              return (
+                <S.LinkAnchor href={option.link} download={true}>
+                  <S.Option>{option.title}</S.Option>
+                </S.LinkAnchor>
+              );
+            } else if (option.isTel) {
+              return (
+                <S.LinkAnchor href={option.link}>
+                  <S.Option>{option.title}</S.Option>
+                </S.LinkAnchor>
+              );
+            } else
+              return (
+                <S.LinkAnchor href={option.link} target="_self">
+                  <S.Option>{option.title}</S.Option>
+                </S.LinkAnchor>
+              );
           })}
         </S.ContainerCards>
 

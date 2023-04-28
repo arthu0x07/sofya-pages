@@ -94,7 +94,7 @@ export const SocialMediaImage = styled.img`
 
 export const SocialMediaTitle = styled.h3`
   text-align: center;
-  color: ${({theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.typography.fontFamily};
   font-size: ${({ theme }) => theme.typography.sizes.medium};
   font-weight: ${({ theme }) => theme.typography.fontWeight.medium};
