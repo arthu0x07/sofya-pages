@@ -35,13 +35,13 @@ export const Languages = {
           title: "Aplicativo",
           video: AplicativoVideo,
           description:
-            "Faça a descrição de procedimentos cirúrgicos muito mais rápido através da voz. Produza relatos mais completos e eficientes, reduzindo erros em processos de cobrança e auditoria de informações.",
+            "Tenha uma central de cuidado na palma da mão para ajudar nas rotinas do paciente. Registre informações através da voz, consulte informações rapidamente e receba alertas em tempo real.",
         },
         {
           title: "Descrição Cirúrgica",
           video: TelemedicinaVideo,
           description:
-            "Faça a descrição de procedimentos cirúrgicos muito mais rápido através da voz. Produza relatos mais completos e eficientes, reduzindo erros em processos de cobrança e auditoria de informações.",
+            "Transcreva consultas de telemedicina em tempo real e identifique automaticamente os termos médicos mais relevantes falados durante a conversa.",
         },
       ],
     },
