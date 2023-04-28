@@ -48,7 +48,7 @@ export function MainHomepage() {
 
         <S.SocialMedia>
           <S.LinkAnchor
-            href="https://l.workplace.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fsofya.health%2F&h=AT3uOXqVjmJ-e2z3xu6_pawlENxK-vHmVnzpVAU4U08BVQisUmNYfDawREagXpv9QQ0NmTHGbo5_OdQxD2EBnzbUfz0y_jHwlgonMFF_CcvBA5wHJST2Fd_wb6znHlY5y78ld1N2ZedWIZ06mTUeeUw-rkc4vM4_xw"
+            href="https://www.instagram.com/sofya.health/"
             target="_self"
           >
             <S.SocialMediaOption>
@@ -58,7 +58,7 @@ export function MainHomepage() {
           </S.LinkAnchor>
 
           <S.LinkAnchor
-            href="https://l.workplace.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsofya-health%2F&h=AT3uOXqVjmJ-e2z3xu6_pawlENxK-vHmVnzpVAU4U08BVQisUmNYfDawREagXpv9QQ0NmTHGbo5_OdQxD2EBnzbUfz0y_jHwlgonMFF_CcvBA5wHJST2Fd_wb6znHlY5y78ld1N2ZedWIZ06mTUeeUw-rkc4vM4_xw"
+            href="https://www.linkedin.com/company/sofya-health"
             target="_self"
           >
             <S.SocialMediaOption>
