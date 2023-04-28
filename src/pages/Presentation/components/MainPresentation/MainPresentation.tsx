@@ -4,7 +4,6 @@ import { VideoComponent } from "/src/pages/Presentation/components/VideoComponen
 
 import * as S from "./styles";
 
-
 export function MainPresentation() {
   const LanguageContextValue: any = useContext(LanguageContext);
   const { screen_apresentation } = LanguageContextValue.selectedLanguage;
@@ -20,8 +19,6 @@ export function MainPresentation() {
               description={CardItem.description}
             />
           ))}
-
-          {/*  */}
         </S.ContainerCards>
       </S.MainWrapper>
     </S.MainContainer>

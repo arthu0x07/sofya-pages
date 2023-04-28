@@ -1,5 +1,5 @@
-import PortuguesPDF from "/src/assets/pdfs/Sofya-Portugues.pdf";
-import EnglishPDF from "/src/assets/pdfs/Sofya-English.pdf";
+import PortuguesPDF from "/src/assets/pdfs/Sofya-Institucional.pdf";
+import EnglishPDF from "/src/assets/pdfs/Sofya-Institutional.pdf";
 
 import DemonstracaoVideo from "/src/assets/videos/centro cirurgico.mp4";
 import AplicativoVideo from "/src/assets/videos/App Sofya.mp4";
