@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import { LanguageContext } from "/src/contexts/LanguageProvider";
+import { VideoComponent } from "/src/pages/Presentation/components/VideoComponent";
 
 import * as S from "./styles";
-import { VideoComponent } from "../VideoComponent";
+
 
 export function MainPresentation() {
   const LanguageContextValue: any = useContext(LanguageContext);
