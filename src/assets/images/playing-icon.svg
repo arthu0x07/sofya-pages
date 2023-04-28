@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125.177" height="125.174" viewBox="0 0 125.177 125.174">
+  <defs>
+    <filter id="Polygon_2" x="33.384" y="27.867" width="69.431" height="69.43" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_13818" x="0" y="0" width="125.177" height="125.174" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_33_4" data-name="Component 33 – 4" transform="translate(9 9)">
+    <g transform="matrix(1, 0, 0, 1, -9, -9)" filter="url(#Polygon_2)">
+      <path id="Polygon_2-2" data-name="Polygon 2" d="M25.715,0,51.43,51.431H0Z" transform="translate(93.81 36.87) rotate(90)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -9)" filter="url(#Path_13818)">
+      <path id="Path_13818-2" data-name="Path 13818" d="M53.589,2.9A50.69,50.69,0,0,0,17.744,89.43,50.691,50.691,0,1,0,89.433,17.743,50.361,50.361,0,0,0,53.589,2.9m0-2.9A53.587,53.587,0,1,1,0,53.587,53.588,53.588,0,0,1,53.589,0Z" transform="translate(9 9)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,4 +1,6 @@
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import * as S from "./styles";
 
 import SofyaLogo from "/src/assets/images/sofya-logo.svg";
@@ -32,7 +34,9 @@ export function Header() {
     <>
       <S.Container>
         <S.Wrapper>
-          <S.LogoImage alt="" src={SofyaLogo} />
+          <Link to={"/"}>
+            <S.LogoImage alt="" src={SofyaLogo} />
+          </Link>
           <S.ContainerSettingsLanguage>
             <S.ContainerSelectedLanguage onClick={handleToggleModal}>
               {selectedLanguage == LanguagesType.portuguese ? (
@@ -41,8 +45,14 @@ export function Header() {
                 <S.LanguageImage alt="" src={USAIcon} />
               )}
             </S.ContainerSelectedLanguage>
-            <LanguageModal handleSelectLanguage={handleSelectLanguage} isModalOpen={isModalOpen}/>
-            <S.Overlay onClick={handleCloseModal} isModalOpen={isModalOpen}></S.Overlay>
+            <LanguageModal
+              handleSelectLanguage={handleSelectLanguage}
+              isModalOpen={isModalOpen}
+            />
+            <S.Overlay
+              onClick={handleCloseModal}
+              isModalOpen={isModalOpen}
+            ></S.Overlay>
           </S.ContainerSettingsLanguage>
         </S.Wrapper>
       </S.Container>
@@ -53,10 +63,13 @@ export function Header() {
 // Modal Language Change Component
 interface LanguageModalProps {
   handleSelectLanguage: (language: LanguagesType) => void;
-  isModalOpen: boolean
+  isModalOpen: boolean;
 }
 
-function LanguageModal({ handleSelectLanguage, isModalOpen }: LanguageModalProps) {
+function LanguageModal({
+  handleSelectLanguage,
+  isModalOpen,
+}: LanguageModalProps) {
   const [modalHeight, setModalHeight] = useState<number>(0);
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -68,7 +81,11 @@ function LanguageModal({ handleSelectLanguage, isModalOpen }: LanguageModalProps
   });
 
   return (
-    <S.ContainerModal ref={modalRef} modalHeight={modalHeight} isModalOpen={isModalOpen}>
+    <S.ContainerModal
+      ref={modalRef}
+      modalHeight={modalHeight}
+      isModalOpen={isModalOpen}
+    >
       <S.ModalOption
         onClick={() => {
           handleSelectLanguage(LanguagesType.portuguese);
