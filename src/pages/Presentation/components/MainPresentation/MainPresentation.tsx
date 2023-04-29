@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { LanguageContext } from "/src/contexts/LanguageProvider";
-import { VideoComponent } from "/src/pages/Presentation/components/VideoComponent";
+import { VideoComponent } from "/src/pages/Presentation/components/videoComponent/VideoComponent.tsx";
 
 import * as S from "./styles";
 
