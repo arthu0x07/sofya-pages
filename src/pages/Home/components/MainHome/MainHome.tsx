@@ -49,7 +49,7 @@ export function MainHomepage() {
         <S.SocialMedia>
           <S.LinkAnchor
             href="https://www.instagram.com/sofya.health/"
-            target="_self"
+            target="_blank"
           >
             <S.SocialMediaOption>
               <S.SocialMediaImage alt="" src={InstagramIcon} />
@@ -59,7 +59,7 @@ export function MainHomepage() {
 
           <S.LinkAnchor
             href="https://www.linkedin.com/company/sofya-health"
-            target="_self"
+            target="_blank"
           >
             <S.SocialMediaOption>
               <S.SocialMediaImage alt="" src={LinkedlnIcon} />
